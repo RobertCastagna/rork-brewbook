@@ -2,7 +2,6 @@
 import { router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import {
-  Modal,
   Platform,
   Pressable,
   StyleSheet,
@@ -13,32 +12,25 @@ import {
 
 export default function ModalScreen() {
   return (
-    <Modal
-      animationType="fade"
-      transparent={true}
-      visible={true}
-      onRequestClose={() => router.back()}
-    >
-      <Pressable style={styles.overlay} onPress={() => router.back()}>
-        <View style={styles.modalContent}>
-          <Text style={styles.title}>Modal</Text>
-          <Text style={styles.description}>
-            This is an example modal with proper fade animation. You can edit it
-            in app/modal.tsx.
-          </Text>
+    <Pressable style={styles.overlay} onPress={() => router.back()}>
+      <View style={styles.modalContent}>
+        <Text style={styles.title}>Modal</Text>
+        <Text style={styles.description}>
+          This is an example modal with proper fade animation. You can edit it
+          in app/modal.tsx.
+        </Text>
 
-          <TouchableOpacity
-            style={styles.closeButton}
-            onPress={() => router.back()}
-          >
-            <Text style={styles.closeButtonText}>Close</Text>
-          </TouchableOpacity>
-        </View>
-      </Pressable>
+        <TouchableOpacity
+          style={styles.closeButton}
+          onPress={() => router.back()}
+        >
+          <Text style={styles.closeButtonText}>Close</Text>
+        </TouchableOpacity>
+      </View>
 
       {/* Use a light status bar on iOS to account for the black space above the modal */}
       <StatusBar style={Platform.OS === "ios" ? "light" : "auto"} />
-    </Modal>
+    </Pressable>
   );
 }
 

@@ -147,7 +147,7 @@ export default function HomeScreen() {
     console.log("[BrewBook] toggling recipe expansion", { recipeId: recipe.id, isPremium: recipe.isPremium });
 
     if (recipe.isPremium) {
-      router.push("./paywall");
+      router.push("/paywall");
       return;
     }
 
@@ -195,7 +195,7 @@ export default function HomeScreen() {
           </View>
 
           <Pressable
-            onPress={() => router.push("./paywall")}
+            onPress={() => router.push("/paywall")}
             style={[styles.heroCta, { backgroundColor: theme.text }]}
             testID="open-paywall-button"
           >
@@ -232,7 +232,7 @@ export default function HomeScreen() {
         </ScrollView>
 
         <View style={styles.sectionHeader}>
-          <Text style={[styles.sectionTitle, { color: theme.text }]}>Today&apos;s picks</Text>
+          <Text style={[styles.sectionTitle, { color: theme.text }]}>{"Today's picks"}</Text>
           <Text style={[styles.sectionCaption, { color: theme.muted }]}>Recipe feed preview</Text>
         </View>
 
