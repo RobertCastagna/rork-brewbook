@@ -1,0 +1,6 @@
+
+# iOS Signing Credentials
+credentials.json
+certs/*
+*.p12
+*.mobileprovision

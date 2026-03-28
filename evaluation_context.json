@@ -1,0 +1,44 @@
+{
+  "project_structure": [
+    "evaluation_context.json",
+    "app.json",
+    "rork.json",
+    "assets/icon.png",
+    "expo/eslint.config.js",
+    "expo/.gitignore",
+    "expo/tsconfig.json",
+    "expo/evaluation_context.json",
+    "expo/eas.json",
+    "expo/app.json",
+    "expo/package-lock.json",
+    "expo/metro.config.js",
+    "expo/babel.config.js",
+    "expo/package.json",
+    "expo/README.md",
+    "expo/constants/colors.ts",
+    "expo/app/index.tsx",
+    "expo/app/+not-found.tsx",
+    "expo/app/_layout.tsx",
+    "expo/app/paywall.tsx",
+    "expo/app/+native-intent.tsx",
+    "expo/app/modal.tsx",
+    "expo/assets/images/icon.png",
+    "expo/assets/images/adaptive-icon.png",
+    "expo/assets/images/favicon.png",
+    "expo/assets/images/splash-icon.png"
+  ],
+  "config_files": {
+    "app.json": {
+      "expo": {
+        "icon": "./assets/icon.png"
+      }
+    }
+  },
+  "dependencies": {},
+  "navigation_structure": "Not fully analyzed in this version",
+  "permissions": [
+    {
+      "ios_infoPlist": {}
+    }
+  ]
+}
