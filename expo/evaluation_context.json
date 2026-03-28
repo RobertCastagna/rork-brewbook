@@ -10,7 +10,6 @@
     "metro.config.js",
     "babel.config.js",
     "package.json",
-    "credentials.json",
     "README.md",
     "constants/colors.ts",
     "app/index.tsx",
@@ -72,6 +71,15 @@
         ],
         "experiments": {
           "typedRoutes": true
+        },
+        "owner": "robert_castagna",
+        "extra": {
+          "router": {
+            "origin": "https://rork.com/"
+          },
+          "eas": {
+            "projectId": "7b8c8fc3-2be8-403a-bdfe-c8ad16b0987a"
+          }
         }
       }
     },
@@ -83,7 +91,9 @@
         "start": "bunx rork start -p vtrexe2g2hnyejmv9zecz --tunnel",
         "start-web": "bunx rork start -p vtrexe2g2hnyejmv9zecz --web --tunnel",
         "start-web-dev": "DEBUG=expo* bunx rork start -p vtrexe2g2hnyejmv9zecz --web --tunnel",
-        "lint": "expo lint"
+        "lint": "expo lint",
+        "android": "expo run:android",
+        "ios": "expo run:ios"
       },
       "dependencies": {
         "@expo/vector-icons": "^15.0.3",
